@@ -100,12 +100,19 @@ while(i < 30) {
 }
 
 // Se não passar o valor de a ou b o valor padrão é 3 + 1 = a + b
-function soma(a = 3, b = 1) {
+/* function soma(a = 3, b = 1) {
     return a + b;
 }
 
-const result = soma(2, 3);
-console.log(result);
+const result = soma(2, 3); 
+console.log(result); 
 
+function soma(a, b, op = "+") {
+    if (op === '+') {
+        return a + b;
+    } else if (op === "-") {
+        return a - b;
+    }
+}
 
-
+console.log(soma(1, 2, "-"));*/
