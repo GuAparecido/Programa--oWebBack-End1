@@ -31,6 +31,19 @@ soma(1, 3, callbackSucess, callbackError);
 
 Dica: Utilize uma promise com função (resolve, reject). */
 
+const somaPromise = (n1, n2) => {
+    return new Promise((resolve, reject) => {
+        const result = n1 + n2;
+
+        if (result % 2 === 0) {
+            resolve(result);
+        } else {
+            reject(result);
+        }
+    })
+}
+
+somaPromise(3, 5).then(callbackSucess).catch(callbackError);
 
 
 
